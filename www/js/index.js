@@ -97,14 +97,13 @@ var app = {
 		//alert('http://viettelstudy.net/?page=Mobile.home&androidRegistrationId='+deviceId, '_blank', 'fullscreen=yes,location=no,zoom=no,status=no,toolbar=no,titlebar=no,disallowoverscroll=yes');
 		
 		try{
-		app.win = window.open('http://viettelstudy.net/?page=Mobile.home', '_blank', 'fullscreen=yes,location=no,zoom=no,status=no,toolbar=no,titlebar=no,disallowoverscroll=yes');
-		alert('http://viettelstudy.net/?page=Mobile.home');
+			app.win = cordova.InAppBrowser.open('http://viettelstudy.net/?page=Mobile.home', '_blank', 'fullscreen=yes,location=no,zoom=no,status=no,toolbar=no,titlebar=no,disallowoverscroll=yes');
+			app.win.show();
 		}
 		catch(e)
 		{
 			alert(e.getMessage());
 		}
-		alert(app.win);
 	},
 	setDeviceId: function(deviceId)
 	{
