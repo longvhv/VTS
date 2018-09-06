@@ -98,15 +98,13 @@ var app = {
 		alert(cordova.InAppBrowser.open);
 		window.open = cordova.InAppBrowser.open;
 		try{
-			document.getElementById('welcome-image').style.display = 'none';
-			app.win = cordova.InAppBrowser.open('http://viettelstudy.net/?page=Mobile.home', '_blank', 'fullscreen=yes,location=no,zoom=no,status=no,toolbar=no,titlebar=no,disallowoverscroll=yes');
-			
 			setTimeout(function(){
-				app.win.show();
-			}, 1000);
-			setTimeout(function(){
+				document.getElementById('welcome-image').style.display = 'none';
 				app.win = cordova.InAppBrowser.open('http://viettelstudy.net/?page=Mobile.home', '_blank', 'fullscreen=yes,location=no,zoom=no,status=no,toolbar=no,titlebar=no,disallowoverscroll=yes');
-			}, 5000);
+			}, 100);
+			/*setTimeout(function(){
+				app.win = cordova.InAppBrowser.open('http://viettelstudy.net/?page=Mobile.home', '_blank', 'fullscreen=yes,location=no,zoom=no,status=no,toolbar=no,titlebar=no,disallowoverscroll=yes');
+			}, 5000);*/
 		}
 		catch(e)
 		{
