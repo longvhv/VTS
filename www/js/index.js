@@ -95,7 +95,16 @@ var app = {
 	initFrame: function()
 	{
 		//alert('http://viettelstudy.net/?page=Mobile.home&androidRegistrationId='+deviceId, '_blank', 'fullscreen=yes,location=no,zoom=no,status=no,toolbar=no,titlebar=no,disallowoverscroll=yes');
-		this.win = window.open('http://viettelstudy.net/?page=Mobile.home', '_blank', 'fullscreen=yes,location=no,zoom=no,status=no,toolbar=no,titlebar=no,disallowoverscroll=yes');
+		
+		try{
+		app.win = window.open('http://viettelstudy.net/?page=Mobile.home', '_blank', 'fullscreen=yes,location=no,zoom=no,status=no,toolbar=no,titlebar=no,disallowoverscroll=yes');
+		alert('http://viettelstudy.net/?page=Mobile.home');
+		}
+		catch(e)
+		{
+			alert(e.getMessage());
+		}
+		alert(app.win);
 	},
 	setDeviceId: function(deviceId)
 	{
