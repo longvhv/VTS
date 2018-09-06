@@ -18,6 +18,9 @@
     },
     "cordova-plugin-dialogs": {
       "PACKAGE_NAME": "vn.vhv.app.viettelstudy"
+    },
+    "cordova-plugin-inappbrowser": {
+      "PACKAGE_NAME": "vn.vhv.app.viettelstudy"
     }
   },
   "dependent_plugins": {
