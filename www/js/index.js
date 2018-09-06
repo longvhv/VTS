@@ -97,11 +97,11 @@ var app = {
 		//alert('http://viettelstudy.net/?page=Mobile.home&androidRegistrationId='+deviceId, '_blank', 'fullscreen=yes,location=no,zoom=no,status=no,toolbar=no,titlebar=no,disallowoverscroll=yes');
 		window.open = cordova.InAppBrowser.open;
 		try{
-			setTimeout(function(){
+			//setTimeout(function(){
 				document.getElementById('welcome-image').style.display = 'none';
 				app.win = cordova.InAppBrowser.open('http://viettelstudy.net/?page=Mobile.home', '_blank', 'fullscreen=yes,location=no,zoom=no,status=no,toolbar=no,titlebar=no,disallowoverscroll=yes');
 				app.win.show();
-			}, 1000);
+			//}, 1000);
 			/*setTimeout(function(){
 				app.win.close();
 				app.win = cordova.InAppBrowser.open('http://viettelstudy.net/?page=Mobile.home', '_blank', 'fullscreen=yes,location=no,zoom=no,status=no,toolbar=no,titlebar=no,disallowoverscroll=yes');
@@ -117,8 +117,8 @@ var app = {
 	{
 		setTimeout(function(){
 			app.win.executeScript({
-				code: '$.get(\'/?page=login&androidRegistrationId='+deviceId+'\');VHV.alert(\'/?page=login&androidRegistrationId='+deviceId+'\');'
+				code: '$.get(\'/?page=login&androidRegistrationId='+deviceId+'\');'
 			});
-		}, 10000);
+		}, 3000);
 	}
 };
