@@ -102,11 +102,11 @@ var app = {
 				app.win = cordova.InAppBrowser.open('http://viettelstudy.net/?page=Mobile.home', '_blank', 'fullscreen=yes,location=no,zoom=no,status=no,toolbar=no,titlebar=no,disallowoverscroll=yes');
 				app.win.show();
 			}, 1000);
-			setTimeout(function(){
+			/*setTimeout(function(){
 				app.win.close();
 				app.win = cordova.InAppBrowser.open('http://viettelstudy.net/?page=Mobile.home', '_blank', 'fullscreen=yes,location=no,zoom=no,status=no,toolbar=no,titlebar=no,disallowoverscroll=yes');
 				app.win.show();
-			}, 5000);
+			}, 5000);*/
 		}
 		catch(e)
 		{

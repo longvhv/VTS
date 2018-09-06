@@ -49,8 +49,8 @@
     <true/>
     <key>NSAppTransportSecurity</key>
     <false/>
-      <key>NSAllowsArbitraryLoads</key>
-      <true/>
+	<key>ITSAppUsesNonExemptEncryption</key><false/>
+    <key>NSAllowsArbitraryLoads</key><true/>
     <key>UIBackgroundModes</key>
     <array>
       <string>remote-notification</string>
