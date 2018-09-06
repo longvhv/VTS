@@ -4,8 +4,8 @@
   "name": "ViettelStudy",
   "short_name": "ViettelStudy",
   "version": "vn.vhv.app.viettelstudy",
-  "description": "Push sample application that receives push notifications.",
-  "author": "PhoneGap Team",
+  "description": "Kênh giáo dục trực tuyến",
+  "author": "ViettelStudy",
   "icons": [],
   "start_url": "index.html",
   "theme_color": "#ee6e73"

@@ -7,19 +7,22 @@
     "files": {}
   },
   "installed_plugins": {
-    "cordova-plugin-dialogs": {
-      "PACKAGE_NAME": "vn.vhv.app.viettelstudy"
-    },
-    "cordova-plugin-inappbrowser": {
-      "PACKAGE_NAME": "vn.vhv.app.viettelstudy"
-    },
     "cordova-plugin-statusbar": {
+      "PACKAGE_NAME": "vn.vhv.app.viettelstudy"
+    },
+    "phonegap-plugin-push": {
       "PACKAGE_NAME": "vn.vhv.app.viettelstudy"
     },
     "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "vn.vhv.app.viettelstudy"
     },
-    "phonegap-plugin-push": {
+    "cordova-plugin-dialogs": {
+      "PACKAGE_NAME": "vn.vhv.app.viettelstudy"
+    },
+    "cordova-plugin-inappbrowser-wkwebview": {
+      "PACKAGE_NAME": "vn.vhv.app.viettelstudy"
+    },
+    "cordova-plugin-wkwebview-engine": {
       "PACKAGE_NAME": "vn.vhv.app.viettelstudy"
     }
   },

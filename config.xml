@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="vn.vhv.app.viettelstudy" version="1.0.11" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="vn.vhv.app.viettelstudy" version="1.0.12" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>ViettelStudy</name>
     <description>
         Kênh giáo dục trực tuyến
@@ -61,19 +61,19 @@
         <splash height="1024" platform="ios" src="www/res/screen/ios/Default-Portrait~ipad.png" width="768" />
         <splash height="960" platform="ios" src="www/res/screen/ios/Default@2x~iphone.png" width="640" />
         <splash height="480" platform="ios" src="www/res/screen/ios/Default~iphone.png" width="320" />
-		<config-file target="*-Info.plist" parent="CFBundleURLTypes">
-			<array>
-				<dict>
-					<key>ITSAppUsesNonExemptEncryption</key>
-					<false/>
-				</dict>
-			</array>
-		</config-file>
-		<allow-intent href="itms:*" />
+        <config-file parent="CFBundleURLTypes" target="*-Info.plist">
+            <array>
+                <dict>
+                    <key>ITSAppUsesNonExemptEncryption</key>
+                    <false />
+                </dict>
+            </array>
+        </config-file>
+        <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
-		<allow-navigation href="*" />
-	    <allow-intent href="*" />
-		<access origin="*" />
+        <allow-navigation href="*" />
+        <allow-intent href="*" />
+        <access origin="*" />
     </platform>
     <platform name="wp8">
         <icon height="99" platform="wp8" src="www/res/icon/wp8/ApplicationIcon.png" width="99" />
@@ -104,17 +104,17 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
-	<allow-navigation href="*" />
+    <allow-navigation href="*" />
     <allow-intent href="*" />
-	
     <engine name="browser" spec="^5.0.4" />
     <engine name="ios" spec="^4.5.4" />
     <engine name="android" spec="^7.0.0" />
     <plugin name="cordova-plugin-statusbar" spec="~2.1.3" />
-    <plugin name="cordova-plugin-dialogs" spec="~1.2.1" />
-    <plugin name="cordova-plugin-whitelist" spec="~1.2.1" />
-    <plugin name="cordova-plugin-inappbrowser" spec="^3.0.0" />
     <plugin name="phonegap-plugin-push" spec="^2.1.3">
         <variable name="SENDER_ID" value="278576349838" />
     </plugin>
+    <plugin name="cordova-plugin-whitelist" spec="^1.3.3" />
+    <plugin name="cordova-plugin-dialogs" spec="^2.0.1" />
+    <plugin name="cordova-plugin-inappbrowser-wkwebview" spec="^1.0.7" />
+    <plugin name="cordova-plugin-wkwebview-engine" spec="^1.1.4" />
 </widget>
