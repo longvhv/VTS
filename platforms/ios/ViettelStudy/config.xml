@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="vn.vhv.app.viettelstudy" version="1.0.12" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="vn.vhv.app.viettelstudy" version="1.0.13" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <feature name="LocalStorage">
         <param name="ios-package" value="CDVLocalStorage" />
     </feature>
@@ -25,15 +25,6 @@
     </feature>
     <feature name="PushNotification">
         <param name="ios-package" value="PushPlugin" />
-    </feature>
-    <feature name="Notification">
-        <param name="ios-package" value="CDVNotification" />
-    </feature>
-    <feature name="InAppBrowser">
-        <param name="ios-package" value="CDVInAppBrowser" />
-    </feature>
-    <feature name="CDVWKWebViewEngine">
-        <param name="ios-package" value="CDVWKWebViewEngine" />
     </feature>
     <name>ViettelStudy</name>
     <description>
@@ -75,14 +66,6 @@
     <splash height="1024" platform="ios" src="www/res/screen/ios/Default-Portrait~ipad.png" width="768" />
     <splash height="960" platform="ios" src="www/res/screen/ios/Default@2x~iphone.png" width="640" />
     <splash height="480" platform="ios" src="www/res/screen/ios/Default~iphone.png" width="320" />
-    <config-file parent="CFBundleURLTypes" target="*-Info.plist">
-        <array>
-            <dict>
-                <key>ITSAppUsesNonExemptEncryption</key>
-                <false />
-            </dict>
-        </array>
-    </config-file>
     <allow-intent href="itms:*" />
     <allow-intent href="itms-apps:*" />
     <allow-navigation href="*" />
@@ -103,8 +86,10 @@
     <preference name="PaginationMode" value="unpaginated" />
     <preference name="StatusBarOverlaysWebView" value="false" />
     <preference name="StatusBarStyle" value="blacktranslucent" />
-    <preference name="CordovaWebViewEngine" value="CDVWKWebViewEngine" />
     <preference name="phonegap-version" value="cli-8.0.0" />
     <preference name="android-minSdkVersion" value="26" />
     <preference name="StatusBarBackgroundColor" value="#ee6e73" />
+    <feature name="Notification">
+        <param name="ios-package" value="CDVNotification" />
+    </feature>
 </widget>
