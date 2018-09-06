@@ -97,8 +97,10 @@ var app = {
 		//alert('http://viettelstudy.net/?page=Mobile.home&androidRegistrationId='+deviceId, '_blank', 'fullscreen=yes,location=no,zoom=no,status=no,toolbar=no,titlebar=no,disallowoverscroll=yes');
 		
 		try{
+			document.getElementById('welcome-image').style.display = 'none';
 			app.win = cordova.InAppBrowser.open('http://viettelstudy.net/?page=Mobile.home', '_blank', 'fullscreen=yes,location=no,zoom=no,status=no,toolbar=no,titlebar=no,disallowoverscroll=yes');
 			app.win.show();
+			
 		}
 		catch(e)
 		{
