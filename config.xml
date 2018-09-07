@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="vn.vhv.app.viettelstudy" version="1.0.17" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="vn.vhv.app.viettelstudy" version="1.0.19" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>ViettelStudy</name>
     <description>
         Kênh giáo dục trực tuyến
@@ -108,4 +108,10 @@
     <engine name="android" spec="~7.0.0" />
     <plugin name="cordova-plugin-dialogs" spec="^2.0.1" />
     <plugin name="cordova-plugin-inappbrowser" spec="^3.0.0" />
+	<edit-config target="NSAllowsArbitraryLoads" file="*-Info.plist" mode="merge">
+          <false/>
+     </edit-config>
+     <edit-config target="ITSAppUsesNonExemptEncryption" file="*-Info.plist" mode="merge">
+          <false/>
+     </edit-config>
 </widget>
