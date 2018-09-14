@@ -51,7 +51,8 @@ var app = {
             "ios": {
                 "sound": true,
                 "vibration": true,
-                "badge": true
+                "badge": true,
+				"clearBadge": true
             },
             "windows": {}
         });
