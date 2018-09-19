@@ -51,7 +51,8 @@ var app = {
             "ios": {
                 "sound": true,
                 "vibration": true,
-                "badge": true
+                "badge": true,
+				"clearBadge": true
             },
             "windows": {}
         });
@@ -94,17 +95,11 @@ var app = {
     },
 	initFrame: function()
 	{
-		//alert('http://viettelstudy.net/?page=Mobile.home&androidRegistrationId='+deviceId, '_blank', 'fullscreen=yes,location=no,zoom=no,status=no,toolbar=no,titlebar=no,disallowoverscroll=yes');
-		alert(cordova.InAppBrowser.open);
 		window.open = cordova.InAppBrowser.open;
 		try{
-			setTimeout(function(){
-				document.getElementById('welcome-image').style.display = 'none';
-				app.win = cordova.InAppBrowser.open('http://viettelstudy.net/?page=Mobile.home', '_blank', 'fullscreen=yes,location=no,zoom=no,status=no,toolbar=no,titlebar=no,disallowoverscroll=yes');
-			}, 100);
-			/*setTimeout(function(){
-				app.win = cordova.InAppBrowser.open('http://viettelstudy.net/?page=Mobile.home', '_blank', 'fullscreen=yes,location=no,zoom=no,status=no,toolbar=no,titlebar=no,disallowoverscroll=yes');
-			}, 5000);*/
+			document.getElementById('welcome-image').style.display = 'none';
+			app.win = cordova.InAppBrowser.open('http://viettelstudy.net/?page=Mobile.login&androidRegistrationId=mobile', '_blank', 'fullscreen=yes,location=no,zoom=no,status=no,toolbar=no,titlebar=no,disallowoverscroll=yes');
+			app.win.show();
 		}
 		catch(e)
 		{
@@ -114,7 +109,7 @@ var app = {
 	setDeviceId: function(deviceId)
 	{
 		app.win.executeScript({
-			code: '$.get(\'/?page=login&androidRegistrationId='+deviceId+'\');VHV.alert(\'/?page=login&androidRegistrationId='+deviceId+'\');'
+			code: 'if(window.$) $.get(\'/api/Member/Device/log?androidRegistrationId='+deviceId+'\'); else location=\'/?page=Mobile.login&androidRegistrationId='+deviceId+'\';'
 		});
 	}
 };
