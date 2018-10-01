@@ -7,7 +7,6 @@
     "displayName": "ViettelStudy",
     "dependencies": {
         "cordova-android": "^7.0.0",
-        "cordova-ios": "^4.5.5",
         "cordova-plugin-camera": "^4.0.3",
         "cordova-plugin-dialogs": "^2.0.1",
         "cordova-plugin-inappbrowser": "^3.0.0",
@@ -28,7 +27,6 @@
             "cordova-plugin-camera": {}
         },
         "platforms": [
-            "ios",
             "android"
         ]
     }
