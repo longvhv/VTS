@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="vn.vhv.app.viettelstudy" version="1.0.25" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="vn.viettelstudy" version="1.0.26" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>ViettelStudy</name>
     <description>
         Kênh giáo dục trực tuyến
@@ -14,26 +14,7 @@
     <preference name="StatusBarOverlaysWebView" value="false" />
     <preference name="StatusBarBackgroundColor" value="#ee6e73" />
     <preference name="StatusBarStyle" value="blacktranslucent" />
-    <platform name="android">
-        <icon density="ldpi" src="www/res/icon/android/drawable-ldpi-icon.png" />
-        <icon density="mdpi" src="www/res/icon/android/drawable-mdpi-icon.png" />
-        <icon density="hdpi" src="www/res/icon/android/drawable-hdpi-icon.png" />
-        <icon density="xhdpi" src="www/res/icon/android/drawable-xhdpi-icon.png" />
-        <icon density="xxhdpi" src="www/res/icon/android/drawable-xxhdpi-icon.png" />
-        <icon density="xxxhdpi" src="www/res/icon/android/drawable-xxxhdpi-icon.png" />
-        <splash density="land-ldpi" src="www/res/screen/android/drawable-land-ldpi-screen.png" />
-        <splash density="land-mdpi" src="www/res/screen/android/drawable-land-mdpi-screen.png" />
-        <splash density="land-hdpi" src="www/res/screen/android/drawable-land-hdpi-screen.png" />
-        <splash density="land-xhdpi" src="www/res/screen/android/drawable-land-xhdpi-screen.png" />
-        <splash density="land-xxhdpi" src="www/res/screen/android/drawable-land-xxhdpi-screen.png" />
-        <splash density="land-xxxhdpi" src="www/res/screen/android/drawable-land-xxxhdpi-screen.png" />
-        <splash density="port-ldpi" src="www/res/screen/android/drawable-port-ldpi-screen.png" />
-        <splash density="port-mdpi" src="www/res/screen/android/drawable-port-mdpi-screen.png" />
-        <splash density="port-hdpi" src="www/res/screen/android/drawable-port-hdpi-screen.png" />
-        <splash density="port-xhdpi" src="www/res/screen/android/drawable-port-xhdpi-screen.png" />
-        <splash density="port-xxhdpi" src="www/res/screen/android/drawable-port-xxhdpi-screen.png" />
-        <splash density="port-xxxhdpi" src="www/res/screen/android/drawable-port-xxxhdpi-screen.png" />
-    </platform>
+    
     <platform name="ios">
         <icon height="57" platform="ios" src="www/res/icon/ios/icon.png" width="57" />
         <icon height="114" platform="ios" src="www/res/icon/ios/icon@2x.png" width="114" />
@@ -67,34 +48,33 @@
         <allow-navigation href="*" />
         <allow-intent href="*" />
         <access origin="*" />
-		<edit-config file="*-Info.plist" mode="merge" target="NSAllowsArbitraryLoads" overwrite="true">
-			<false />
-		</edit-config>
-		<edit-config file="*-Info.plist" mode="merge" target="ITSAppUsesNonExemptEncryption" overwrite="true">
-			<false />
-		</edit-config>
-		 <edit-config target="NSPhotoLibraryUsageDescription" file="*-Info.plist" mode="merge" overwrite="true" >
-			  <string>ViettelStudy cần truy cập thư viện ảnh để bạn có thể chọn ảnh upload lên hệ thống.</string>
-		 </edit-config>
-		 <edit-config target="NSCameraUsageDescription" file="*-Info.plist" mode="merge" overwrite="true">
-			  <string>ViettelStudy cần truy cập camera chụp ảnh hoặc quay video để upload.</string>
-		 </edit-config>
-		 <edit-config target="NSMicrophoneUsageDescription" file="*-Info.plist" mode="merge" overwrite="true" >
-			  <string>ViettelStudy cần truy cập microphone dùng khi quay video để upload.</string>
-		 </edit-config>
-		 <edit-config file="*-Info.plist" mode="merge" overwrite="true" target="UISupportedInterfaceOrientations">
-			<array>
-			  <string>UIInterfaceOrientationPortrait</string>
-			</array>
-		</edit-config>
-		<edit-config file="*-Info.plist" mode="merge" overwrite="true" target="UISupportedInterfaceOrientations~ipad">
-			<array>
-			  <string>UIInterfaceOrientationPortrait</string>
-			  <string>UIInterfaceOrientationPortraitUpsideDown</string>
-			</array>
-		</edit-config>
+        <edit-config file="*-Info.plist" mode="merge" overwrite="true" target="NSAllowsArbitraryLoads">
+            <false />
+        </edit-config>
+        <edit-config file="*-Info.plist" mode="merge" overwrite="true" target="ITSAppUsesNonExemptEncryption">
+            <false />
+        </edit-config>
+        <edit-config file="*-Info.plist" mode="merge" overwrite="true" target="NSPhotoLibraryUsageDescription">
+            <string>ViettelStudy cần truy cập thư viện ảnh để bạn có thể chọn ảnh upload lên hệ thống.</string>
+        </edit-config>
+        <edit-config file="*-Info.plist" mode="merge" overwrite="true" target="NSCameraUsageDescription">
+            <string>ViettelStudy cần truy cập camera chụp ảnh hoặc quay video để upload.</string>
+        </edit-config>
+        <edit-config file="*-Info.plist" mode="merge" overwrite="true" target="NSMicrophoneUsageDescription">
+            <string>ViettelStudy cần truy cập microphone dùng khi quay video để upload.</string>
+        </edit-config>
+        <edit-config file="*-Info.plist" mode="merge" overwrite="true" target="UISupportedInterfaceOrientations">
+            <array>
+                <string>UIInterfaceOrientationPortrait</string>
+            </array>
+        </edit-config>
+        <edit-config file="*-Info.plist" mode="merge" overwrite="true" target="UISupportedInterfaceOrientations~ipad">
+            <array>
+                <string>UIInterfaceOrientationPortrait</string>
+                <string>UIInterfaceOrientationPortraitUpsideDown</string>
+            </array>
+        </edit-config>
     </platform>
-
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
@@ -110,13 +90,10 @@
     </plugin>
     <plugin name="cordova-plugin-whitelist" spec="^1.3.3" />
     <engine name="ios" spec="~4.5.5" />
-    <engine name="android" spec="~7.0.0" />
     <plugin name="cordova-plugin-dialogs" spec="^2.0.1" />
     <plugin name="cordova-plugin-inappbrowser" spec="^3.0.0" />
-    
     <plugin name="cordova-plugin-camera" spec="^4.0.3">
-		<param name="CAMERA_USAGE_DESCRIPTION" value="ViettelStudy cần truy cập camera chụp ảnh hoặc quay video để upload." />
-		<param name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="ViettelStudy cần truy cập thư viện ảnh để bạn có thể chọn ảnh upload lên hệ thống." />
-	</plugin>
-	
+        <param name="CAMERA_USAGE_DESCRIPTION" value="ViettelStudy cần truy cập camera chụp ảnh hoặc quay video để upload." />
+        <param name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="ViettelStudy cần truy cập thư viện ảnh để bạn có thể chọn ảnh upload lên hệ thống." />
+    </plugin>
 </widget>
