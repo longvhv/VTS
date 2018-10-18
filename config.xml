@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="vn.vhv.app.viettelstudy" version="1.0.29" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="vn.vhv.app.viettelstudy" version="1.0.30" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>ViettelStudy</name>
     <description>
         Kênh giáo dục trực tuyến
@@ -34,6 +34,7 @@
         <splash density="port-xxhdpi" src="www/res/screen/android/drawable-port-xxhdpi-screen.png" />
         <splash density="port-xxxhdpi" src="www/res/screen/android/drawable-port-xxxhdpi-screen.png" />
 		<resource-file src="google-services.json" target="app/google-services.json" />
+		<preference name="android-minSdkVersion" value="16" />
     </platform>
 
     <access origin="*" />
@@ -46,7 +47,7 @@
     <allow-navigation href="*" />
     <allow-intent href="*" />
     <plugin name="cordova-plugin-statusbar" spec="~2.1.3" />
-    <plugin name="phonegap-plugin-push" spec="^2.1.3">
+    <plugin name="phonegap-plugin-push" spec="~2.1.3">
         <variable name="SENDER_ID" value="533231671986" />
     </plugin>
     <plugin name="cordova-plugin-whitelist" spec="^1.3.3" />
