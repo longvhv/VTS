@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "533231671986",
+    "firebase_url": "https://viettelstudy-208607.firebaseio.com",
+    "project_id": "viettelstudy-208607",
+    "storage_bucket": "viettelstudy-208607.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:533231671986:android:ed67cc58e168bf8c",
+        "android_client_info": {
+          "package_name": "vn.vhv.app.viettelstudy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "533231671986-fqb4va023pcs88asovje9310v52t1820.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpMCa3-5HcDxY7_5V02t4MrBGOIb4qUX4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
