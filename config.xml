@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="vn.vhv.app.viettelstudy" version="1.0.31" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="vn.vhv.app.viettelstudy" version="1.0.32" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>ViettelStudy</name>
     <description>
         Kênh giáo dục trực tuyến
@@ -35,6 +35,7 @@
         <splash density="port-xxxhdpi" src="www/res/screen/android/drawable-port-xxxhdpi-screen.png" />
 		<resource-file src="google-services.json" target="app/google-services.json" />
 		<preference name="android-minSdkVersion" value="16" />
+		<preference name="AndroidLaunchMode" value="singleTop" />
     </platform>
 
     <access origin="*" />
